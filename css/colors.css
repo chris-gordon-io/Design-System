@@ -1,0 +1,35 @@
+/*
+ * Brand orange scale — each step is a linear mix of the base colour (100)
+ * toward white, where the step number is the mix percentage.
+ * Steps 70/50/30/10/5 were derived (not sourced from Figma) to fill the ramp.
+ */
+:root {
+  --color-orange-100: #da441b;
+  --color-orange-90: #de5732;
+  --color-orange-80: #e16949;
+  --color-orange-70: #e57c5f;
+  --color-orange-60: #e98f76;
+  --color-orange-50: #eda28d;
+  --color-orange-40: #f0b4a4;
+  --color-orange-30: #f4c7bb;
+  --color-orange-20: #f8dad1;
+  --color-orange-10: #fbece8;
+  --color-orange-5: #fdf6f4;
+
+  --color-brand-primary: var(--color-orange-100);
+
+  /*
+   * Neutral scale — same base-mixed-toward-white idea as orange down to 30%,
+   * but 20/10 were hand-adjusted off the pure linear line (kept as sourced).
+   */
+  --color-neutral-100: #23233b;
+  --color-neutral-90: #39394f;
+  --color-neutral-80: #4f4f62;
+  --color-neutral-70: #656576;
+  --color-neutral-60: #7b7b89;
+  --color-neutral-50: #91919d;
+  --color-neutral-40: #a7a7b1;
+  --color-neutral-30: #bdbdc4;
+  --color-neutral-20: #e9e9eb;
+  --color-neutral-10: #f4f4f5;
+}
