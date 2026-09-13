@@ -1,6 +1,6 @@
 # ChrisGordon-DS
 
-Design tokens: Safiro typeface + brand orange scale.
+Design tokens: Safiro typeface, brand orange scale, spacing.
 
 ## Structure
 
@@ -8,9 +8,10 @@ Design tokens: Safiro typeface + brand orange scale.
 fonts/            Safiro webfonts (woff2/woff), regular/medium/semibold/bold + italics
 css/
   fonts.css       @font-face declarations
-  colors.css      --color-orange-* custom properties
+  colors.css      --color-orange-* / --color-neutral-* custom properties
   typography.css  --font-family-base / --font-weight-* custom properties
-  index.css       imports all three
+  spacing.css     --space-{xs,s,m,l,xl} custom properties
+  index.css       imports all of the above
 tokens/
   tokens.json     source of truth, plain data
   tokens.js       JS/TS import of tokens.json
@@ -45,6 +46,12 @@ same formula to fill the ramp.
 `--color-neutral-{step}` (`100`→`10`) came from Figma directly. It follows
 the same base-mixed-toward-white formula as orange down to `30`, but `20`
 and `10` were hand-adjusted off that line (kept as sourced, not normalized).
+
+## Spacing
+
+`--space-{xs,s,m,l,xl}` → `4 / 8 / 16 / 40 / 80` (px). Doubles through the
+small end, then jumps for the spacious end; every value sits on a 4px grid.
+Not sourced from Figma — pick your own steps if these don't fit.
 
 ## Fonts
 
