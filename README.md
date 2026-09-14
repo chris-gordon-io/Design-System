@@ -11,6 +11,8 @@ css/
   colors.css      --color-orange-* / --color-neutral-* custom properties
   typography.css  --font-family-base / --font-weight-* custom properties
   spacing.css     --space-{xs,s,m,l,xl} custom properties
+  radius.css      --radius-{sm,md,lg,xl,full} custom properties
+  buttons.css     .btn component — skins + sizes
   index.css       imports all of the above
 tokens/
   tokens.json     source of truth, plain data
@@ -52,6 +54,23 @@ and `10` were hand-adjusted off that line (kept as sourced, not normalized).
 `--space-{xs,s,m,l,xl}` → `4 / 8 / 16 / 40 / 80` (px). Doubles through the
 small end, then jumps for the spacious end; every value sits on a 4px grid.
 Not sourced from Figma — pick your own steps if these don't fit.
+
+## Buttons
+
+`.btn` is the base class; combine with a skin and a size.
+
+Skins: `.btn--secondary` (transparent, dark outline/text, tints on hover).
+
+Sizes: `.btn--sm` (36px), `.btn--md` (44px), `.btn--lg` (52px) — each sets
+height, horizontal padding, and font-size. An optional leading/trailing
+`.btn-icon` (an inline `<svg>`) is sized to match.
+
+```html
+<a href="/" class="btn btn--secondary btn--md">
+  <svg class="btn-icon" viewBox="0 0 16 16">…</svg>
+  Back to all work
+</a>
+```
 
 ## Fonts
 
