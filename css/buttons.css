@@ -22,7 +22,20 @@
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  transition: opacity 0.2s, background 0.15s;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+/* Keyboard-only focus ring (not shown on mouse/touch clicks). Brand orange
+   reads at >=3:1 against every skin's background (white, transparent-on-bg,
+   and #272737), so one colour works as a focus indicator everywhere —
+   satisfies WCAG 2.4.7 Focus Visible / 1.4.11 Non-text Contrast. */
+.btn:focus-visible {
+  outline: 2px solid var(--color-orange-100);
+  outline-offset: 2px;
+}
+
+.btn:active {
+  transform: scale(0.97);
 }
 
 .btn-icon {
@@ -31,7 +44,11 @@
   height: 16px;
 }
 
-/* ── Skins ── */
+/* ── Skins ──
+   Hover/press darken (or dim) the base fill via color-mix — this keeps
+   text contrast equal to or better than the resting state at every step
+   (verified against WCAG AA 4.5:1), rather than fading with opacity, which
+   can't be checked against a caller's actual page background. */
 .btn--primary {
   background: #272737;
   border-color: #272737;
@@ -39,7 +56,13 @@
 }
 
 .btn--primary:hover {
-  opacity: 0.85;
+  background: color-mix(in srgb, #272737 88%, black);
+  border-color: color-mix(in srgb, #272737 88%, black);
+}
+
+.btn--primary:active {
+  background: color-mix(in srgb, #272737 76%, black);
+  border-color: color-mix(in srgb, #272737 76%, black);
 }
 
 .btn--primary-reversed {
@@ -49,7 +72,13 @@
 }
 
 .btn--primary-reversed:hover {
-  opacity: 0.85;
+  background: color-mix(in srgb, #ffffff 92%, black);
+  border-color: color-mix(in srgb, #ffffff 92%, black);
+}
+
+.btn--primary-reversed:active {
+  background: color-mix(in srgb, #ffffff 84%, black);
+  border-color: color-mix(in srgb, #ffffff 84%, black);
 }
 
 .btn--secondary {
@@ -60,6 +89,10 @@
 
 .btn--secondary:hover {
   background: rgba(39, 39, 55, 0.06);
+}
+
+.btn--secondary:active {
+  background: rgba(39, 39, 55, 0.12);
 }
 
 /* ── Sizes ── */

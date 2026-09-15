@@ -76,6 +76,15 @@ Figma spec exactly. `.btn--lg` (52px) extrapolates beyond it for contexts
 needing a bigger tap target. An optional leading/trailing `.btn-icon` (an
 inline `<svg>`) is 16px by default.
 
+**States**: hover and active darken (`--primary`) or dim (`--primary-reversed`)
+the fill via `color-mix()` rather than opacity, so contrast only improves,
+never degrades, at every step — checked against WCAG AA (base fills are
+~14.7:1 against their text). `--secondary` tints its background instead,
+on the same logic. Every skin also gets a `:focus-visible` ring in
+`--color-orange-100`, which holds ≥3:1 against all three fills (white,
+transparent-on-page-bg, `#272737`) — meets 2.4.7 Focus Visible / 1.4.11
+Non-text Contrast without needing a different ring colour per skin.
+
 ```html
 <a href="/" class="btn btn--primary btn--md">Get in touch</a>
 <a href="/" class="btn btn--secondary btn--md">
