@@ -57,15 +57,27 @@ Not sourced from Figma — pick your own steps if these don't fit.
 
 ## Buttons
 
-`.btn` is the base class; combine with a skin and a size.
+`.btn` is the base class; combine with a skin and a size. Sourced from
+Figma node `3275:9290` ("Buttons") — text is Safiro Medium 16/20 at every
+size, so only padding (and therefore height) changes between sizes.
 
-Skins: `.btn--secondary` (transparent, dark outline/text, tints on hover).
+Skins:
+- `.btn--primary` — solid dark fill (`#272737`), white text.
+- `.btn--primary-reversed` — solid white fill, dark text. For use on dark
+  backgrounds.
+- `.btn--secondary` — transparent, 1px dark outline/text, tints on hover.
 
-Sizes: `.btn--sm` (36px), `.btn--md` (44px), `.btn--lg` (52px) — each sets
-height, horizontal padding, and font-size. An optional leading/trailing
-`.btn-icon` (an inline `<svg>`) is sized to match.
+All three use `#272737` ("dark-100" in Figma), which is a distinct value
+from the neutral scale's `--color-neutral-100` (`#23233b`) — don't conflate
+the two.
+
+Sizes: `.btn--sm` (36px tall), `.btn--md` (44px tall) — both match the
+Figma spec exactly. `.btn--lg` (52px) extrapolates beyond it for contexts
+needing a bigger tap target. An optional leading/trailing `.btn-icon` (an
+inline `<svg>`) is 16px by default.
 
 ```html
+<a href="/" class="btn btn--primary btn--md">Get in touch</a>
 <a href="/" class="btn btn--secondary btn--md">
   <svg class="btn-icon" viewBox="0 0 16 16">…</svg>
   Back to all work
