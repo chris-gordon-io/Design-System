@@ -59,7 +59,7 @@ Not sourced from Figma — pick your own steps if these don't fit.
 
 `.heading-1` (38px / bold / -1.5px tracking / 1.0 line-height),
 `.heading-2` (32px / bold / -0.4px / 1.4) and `.heading-3` (fluid 28px down
-to 22px / bold / -0.4px / 1.3). All use Safiro and `--color-neutral-100`,
+to 22px / bold / -0.4px / 1.4). All use Safiro and `--color-neutral-100`,
 with `margin: 0`; override colour on dark surfaces.
 
 ```html
