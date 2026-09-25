@@ -57,7 +57,7 @@ Not sourced from Figma — pick your own steps if these don't fit.
 
 ## Type styles
 
-`.heading-1` (38px / bold / -1.5px tracking / 1.1 line-height) and
+`.heading-1` (38px / bold / -1.5px tracking / 1.0 line-height) and
 `.heading-2` (28px / bold / -0.4px / 1.3). Both use Safiro and
 `--color-neutral-100`, with `margin: 0`; override colour on dark surfaces.
 
