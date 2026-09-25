@@ -57,13 +57,15 @@ Not sourced from Figma — pick your own steps if these don't fit.
 
 ## Type styles
 
-`.heading-1` (38px / bold / -1.5px tracking / 1.0 line-height) and
-`.heading-2` (28px / bold / -0.4px / 1.3). Both use Safiro and
-`--color-neutral-100`, with `margin: 0`; override colour on dark surfaces.
+`.heading-1` (38px / bold / -1.5px tracking / 1.0 line-height),
+`.heading-2` (32px / bold / -0.4px / 1.3) and `.heading-3` (fluid 28px down
+to 22px / bold / -0.4px / 1.3). All use Safiro and `--color-neutral-100`,
+with `margin: 0`; override colour on dark surfaces.
 
 ```html
 <h1 class="heading-1">Benchmark</h1>
 <p class="heading-2">Topline</p>
+<h3 class="heading-3">About</h3>
 ```
 
 ## Buttons
