@@ -50,4 +50,5 @@
   line-height: 1.4;
   color: var(--color-neutral-80);
   margin: 0;
+  text-wrap: balance;
 }
