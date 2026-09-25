@@ -62,7 +62,7 @@ Not sourced from Figma — pick your own steps if these don't fit.
 to 22px / bold / -0.4px / 1.4). All use Safiro and `--color-neutral-100`,
 with `margin: 0`; override colour on dark surfaces.
 
-`.body` (16px / regular / 24px line-height, `--color-neutral-100`) is the
+`.body` (16px / regular / 1.4 line-height, `--color-neutral-100`) is the
 main copy style.
 
 `.body-large` (20px / regular / -0.3px / 1.4, `--color-neutral-80`,
