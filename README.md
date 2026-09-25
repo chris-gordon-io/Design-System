@@ -65,7 +65,7 @@ with `margin: 0`; override colour on dark surfaces.
 `.body` (16px / regular / 24px line-height, `--color-neutral-100`) is the
 main copy style.
 
-`.body-large` (20px / regular / -0.3px / 1.4, `--color-neutral-80`,
+`.body-large` (20px / regular / -0.3px / 1.6, `--color-neutral-80`,
 `text-wrap: balance`) is the
 lead-in paragraph style used under Topline and Impact.
 
