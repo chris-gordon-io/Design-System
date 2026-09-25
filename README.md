@@ -57,10 +57,12 @@ Not sourced from Figma — pick your own steps if these don't fit.
 
 ## Type styles
 
-`.heading-1` (38px / bold / -1.5px tracking / 1.0 line-height),
-`.heading-2` (30px / bold / -0.4px / 1.4) and `.heading-3` (fluid 28px down
-to 22px / bold / -0.4px / 1.4). All use Safiro and `--color-neutral-100`,
-with `margin: 0`; override colour on dark surfaces.
+`.heading-1` (fluid 38px down to 30px / bold / -1.5px tracking / 1.0
+line-height), `.heading-2` (fluid 30px down to 24px / bold / -0.4px / 1.4) and
+`.heading-3` (fluid 28px down to 22px / bold / -0.4px / 1.4). Headings are
+full size from ~1215px viewports up and reach their minimum by ~785px. All use
+Safiro and `--color-neutral-100`, with `margin: 0`; override colour on dark
+surfaces.
 
 `.body` (16px / regular / 1.4 line-height, `--color-neutral-100`) is the
 main copy style.

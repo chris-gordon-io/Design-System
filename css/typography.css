@@ -8,12 +8,14 @@
 }
 
 /* ── Type styles ──
+   Headings are fluid: full size from ~1215px viewports up, easing down to
+   the minimum by ~785px (H1 38 to 30, H2 30 to 24, H3 28 to 22).
    Heading 1 / Heading 2 sourced from the Portfolio project-page title and
    "Topline" heading. Colour is neutral-100 (#23233b); override per context
    (e.g. on dark surfaces). */
 .heading-1 {
   font-family: var(--font-family-base);
-  font-size: 38px;
+  font-size: clamp(30px, 15.4px + 1.86vw, 38px);
   font-weight: var(--font-weight-bold);
   letter-spacing: -1.5px;
   line-height: 1;
@@ -23,7 +25,7 @@
 
 .heading-2 {
   font-family: var(--font-family-base);
-  font-size: 30px;
+  font-size: clamp(24px, 13px + 1.4vw, 30px);
   font-weight: var(--font-weight-bold);
   letter-spacing: -0.4px;
   line-height: 1.4;
@@ -31,7 +33,7 @@
   margin: 0;
 }
 
-/* Fluid: 28px from ~1215px viewports up, easing down to 22px by ~785px. */
+
 .heading-3 {
   font-family: var(--font-family-base);
   font-size: clamp(22px, 11px + 1.4vw, 28px);
