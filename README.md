@@ -62,7 +62,7 @@ Not sourced from Figma — pick your own steps if these don't fit.
 to 22px / bold / -0.4px / 1.4). All use Safiro and `--color-neutral-100`,
 with `margin: 0`; override colour on dark surfaces.
 
-`.body-large` (22px / regular / -0.3px / 1.4, `--color-neutral-80`) is the
+`.body-large` (20px / regular / -0.3px / 1.4, `--color-neutral-80`) is the
 lead-in paragraph style used under Topline and Impact.
 
 ```html
