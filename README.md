@@ -9,7 +9,7 @@ fonts/            Safiro webfonts (woff2/woff), regular/medium/semibold/bold + i
 css/
   fonts.css       @font-face declarations
   colors.css      --color-orange-* / --color-neutral-* custom properties
-  typography.css  --font-family-base / --font-weight-* custom properties
+  typography.css  --font-family-base / --font-weight-* custom properties, .heading-1/.heading-2
   spacing.css     --space-{xs,s,m,l,xl} custom properties
   radius.css      --radius-{sm,md,lg,xl,full} custom properties
   buttons.css     .btn component — skins + sizes
@@ -54,6 +54,17 @@ and `10` were hand-adjusted off that line (kept as sourced, not normalized).
 `--space-{xs,s,m,l,xl}` → `4 / 8 / 16 / 40 / 80` (px). Doubles through the
 small end, then jumps for the spacious end; every value sits on a 4px grid.
 Not sourced from Figma — pick your own steps if these don't fit.
+
+## Type styles
+
+`.heading-1` (42px / bold / -1.5px tracking / 1.1 line-height) and
+`.heading-2` (28px / bold / -0.4px / 1.3). Both use Safiro and
+`--color-neutral-100`, with `margin: 0`; override colour on dark surfaces.
+
+```html
+<h1 class="heading-1">Benchmark</h1>
+<p class="heading-2">Topline</p>
+```
 
 ## Buttons
 
