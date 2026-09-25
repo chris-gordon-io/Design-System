@@ -62,6 +62,9 @@ Not sourced from Figma — pick your own steps if these don't fit.
 to 22px / bold / -0.4px / 1.4). All use Safiro and `--color-neutral-100`,
 with `margin: 0`; override colour on dark surfaces.
 
+`.body` (16px / regular / 24px line-height, `--color-neutral-100`) is the
+main copy style.
+
 `.body-large` (20px / regular / -0.3px / 1.4, `--color-neutral-80`,
 `text-wrap: balance`) is the
 lead-in paragraph style used under Topline and Impact.
@@ -70,6 +73,7 @@ lead-in paragraph style used under Topline and Impact.
 <h1 class="heading-1">Benchmark</h1>
 <p class="heading-2">Topline</p>
 <h3 class="heading-3">About</h3>
+<p class="body">Benchmark is a B2B SaaS business…</p>
 <p class="body-large">Creating a complex, multi-app estimating tool…</p>
 ```
 
