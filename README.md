@@ -71,12 +71,16 @@ main copy style.
 `text-wrap: balance`) is the
 lead-in paragraph style used under Topline and Impact.
 
+`.body-small` (14px / regular / 1.4, `--color-neutral-100`) is for captions,
+metadata, and other secondary copy smaller than the main body style.
+
 ```html
 <h1 class="heading-1">Benchmark</h1>
 <p class="heading-2">Topline</p>
 <h3 class="heading-3">About</h3>
 <p class="body">Benchmark is a B2B SaaS business…</p>
 <p class="body-large">Creating a complex, multi-app estimating tool…</p>
+<p class="body-small">Opens in Notion</p>
 ```
 
 ## Buttons
