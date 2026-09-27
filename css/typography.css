@@ -9,13 +9,13 @@
 
 /* ── Type styles ──
    Headings are fluid: full size from ~1215px viewports up, easing down to
-   the minimum by ~785px (H1 38 to 30, H2 30 to 24, H3 28 to 22).
+   the minimum by ~785px (H1 46 to 38, H2 30 to 24, H3 28 to 22).
    Heading 1 / Heading 2 sourced from the Portfolio project-page title and
    "Topline" heading. Colour is neutral-100 (#23233b); override per context
    (e.g. on dark surfaces). */
 .heading-1 {
   font-family: var(--font-family-base);
-  font-size: clamp(30px, 15.4px + 1.86vw, 38px);
+  font-size: clamp(38px, 23.4px + 1.86vw, 46px);
   font-weight: var(--font-weight-bold);
   letter-spacing: -1.5px;
   line-height: 1;

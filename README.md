@@ -57,7 +57,7 @@ Not sourced from Figma — pick your own steps if these don't fit.
 
 ## Type styles
 
-`.heading-1` (fluid 38px down to 30px / bold / -1.5px tracking / 1.0
+`.heading-1` (fluid 46px down to 38px / bold / -1.5px tracking / 1.0
 line-height), `.heading-2` (fluid 30px down to 24px / bold / -0.4px / 1.4) and
 `.heading-3` (fluid 28px down to 22px / bold / -0.4px / 1.4). Headings are
 full size from ~1215px viewports up and reach their minimum by ~785px. All use
